@@ -35,13 +35,17 @@ class UpcomingFilmsBox extends Component {
     };
   }
 
-
+  displayUrl = () => {
+    const url = "https://www.imdb.com/calendar/?region=gb";
+  }
 
   render() {
     return (
       <div className="upcoming-films-box">
         <h1>Upcoming Film Releases for the UK</h1>
         <UpcomingFilmsList data={this.state.data} />
+        <button type="button" onClick={this.displayUrl}>
+        View more upcoming releases...</button>
       </div>
     )
   }
