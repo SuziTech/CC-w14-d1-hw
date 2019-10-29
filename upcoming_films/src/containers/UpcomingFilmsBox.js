@@ -37,6 +37,7 @@ class UpcomingFilmsBox extends Component {
 
   displayUrl = () => {
     const url = "https://www.imdb.com/calendar/?region=gb";
+    window.location.href=url;
   }
 
   render() {
